@@ -67,9 +67,35 @@ function concatenateVariable(input1, input2, input3) {
    input1 = String(input1);
    return input1 + " " + input2 + " " + input3;
 }
-function stringLength(input1, input2) {
+function stringLength(input) {
+   // A1: any JavaScript string
+   // R: the length of the string
+   return input.length;
+}
+function findFirstCharacter(input) {
+   // A1: any JavaScript string !important! JavaScripts index begins at 0
+   // R: the first character of string
+   return input[0];
+}
+function findNthCharacter(input1, input2) {
+   // A1: any Javascript string
+   // A2: a number used to find a index location in the string
+   // R: the letter associated with the number within the string
    input1 = String(input1);
-   input2 = Length(input2);
-   input1 + input2;
-   return input1;
+   input2 = Number(input2);
+   return input1[input2 - 0];
+}
+function findLastCharacter(input) {
+   // A1: any JavaScript string !important! JavaScripts index begins at 0
+   // R: the last character of the string
+   return input[input.length - 1];
+}
+function findNthLastCharacter(input) {
+   // A1: any Javascript string
+   // R: the nth to last letter of the string
+   // This is alternate code that I believe is more accurate
+   // input1 = String(input1);
+   // input2 = Number(input2);
+   // return input1[input.length - input2];
+   return input[input.length - 3];
 }
