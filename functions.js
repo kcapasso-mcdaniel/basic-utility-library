@@ -46,11 +46,30 @@ function decimalDivide(input1, input2) {
    // R: a single JavaScript numeric decimal value
    return input1 / input2;
 }
-function concatenationPlus(input1, input2) {
-   // A1: contents of first string
-   // A2: contents of second string
-   // R: returns two strings together, but with no space - need to fix
+function concatenatePlus(input1, input2) {
+   // A1: indicates input1 is the beginning of a string
+   // R: returns two strings together with proper spacing
    input1 = String(input1);
+   return input1 + " " + input2;
+}
+function concatenatePlusEquals(input1, input2) {
+   // A1: indicates input1 is the beginning of a string
+   // A2: uses the plusequals operator to combine the strings
+   // R: one line with both strings
+   input1 = String(input1);
+   input1 += " " + input2;
+   return input1;
+}
+function concatenateVariable(input1, input2, input3) {
+   // A1: indicates input1 is the beginning of a string
+   // A2: input1 and input2 concatenate
+   // R: input1 and input1 concatenated with an additional variable
+   input1 = String(input1);
+   return input1 + " " + input2 + " " + input3;
+}
+function stringLength(input1, input2) {
+   input1 = String(input1);
+   input2 = Length(input2);
    input1 + input2;
    return input1;
 }
